@@ -1,10 +1,12 @@
 package com.expert.multisound
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.animation.AlphaAnimation
-import com.expert.multisound.R
+import android.view.animation.Animation
+import android.view.animation.Animation.AnimationListener
+import com.expert.multisound.activity.login.LoginActivity
 import com.expert.multisound.base.BaseActivity
-import com.expert.multisound.module.AnimateStartModule
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
@@ -25,7 +27,20 @@ class AppActivity : BaseActivity() {
     }
 
     fun styleActivity(){
+        animateS.setAnimationListener(object : AnimationListener {
+            override fun onAnimationStart(animation: Animation) {}
+            override fun onAnimationRepeat(animation: Animation) {}
+            override fun onAnimationEnd(animation: Animation) {
+                Next()
+            }
+        })
         txt.startAnimation(animateS)
     }
 
+    fun Next(){
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+    }
+
 }
+

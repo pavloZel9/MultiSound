@@ -21,6 +21,7 @@
             android:gravity="center"
             android:text="@string/app_name"
             android:textColor="@color/color8"
+
             android:textSize="@dimen/very_big_text"
             android:textStyle="bold" />
 

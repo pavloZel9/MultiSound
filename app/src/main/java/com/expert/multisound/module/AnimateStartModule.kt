@@ -4,7 +4,7 @@ import android.view.animation.AlphaAnimation
 import dagger.Module
 import dagger.Provides
 @Module
-class AnimateStartModule {
+class AnimateModule {
     @Provides
     fun getAnimateStart(): AlphaAnimation {
         val animation1 = AlphaAnimation(0.0f, 1.0f)

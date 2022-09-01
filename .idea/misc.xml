@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Solaris/AndroidStudioProjects/MultiSound/app/src/main/res/drawable/button_theme.xml" value="0.303" />
+        <entry key="..\:/Users/Solaris/AndroidStudioProjects/MultiSound/app/src/main/res/drawable/editext.xml" value="0.303" />
+        <entry key="..\:/Users/Solaris/AndroidStudioProjects/MultiSound/app/src/main/res/drawable/ic_waves.xml" value="0.303" />
+        <entry key="..\:/Users/Solaris/AndroidStudioProjects/MultiSound/app/src/main/res/layout/activity_login.xml" value="0.5609375" />
         <entry key="..\:/Users/Solaris/AndroidStudioProjects/MultiSound/app/src/main/res/layout/activity_main.xml" value="0.38385416666666666" />
       </map>
     </option>
