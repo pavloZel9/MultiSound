@@ -48,4 +48,8 @@ dependencies {
     kapt 'com.google.dagger:dagger-compiler:2.43.2'
     implementation 'com.hbb20:ccp:2.6.1'
 
+    implementation platform('com.google.firebase:firebase-bom:30.3.1')
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
 }

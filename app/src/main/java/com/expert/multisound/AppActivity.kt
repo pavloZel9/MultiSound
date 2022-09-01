@@ -40,6 +40,7 @@ class AppActivity : BaseActivity() {
     fun Next(){
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
+        overridePendingTransition(R.anim.outfade, R.anim.fade)
     }
 
 }

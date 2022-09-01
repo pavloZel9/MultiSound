@@ -3,5 +3,5 @@
     <dimen name="very_big_text">50sp</dimen>
 
     <dimen name="edt_txt_size">18sp</dimen>
-
+    <dimen name="bot_url">16sp</dimen>
 </resources>

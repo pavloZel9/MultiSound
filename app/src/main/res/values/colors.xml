@@ -14,7 +14,7 @@
     <color name="color_c">#BBB2A1</color>
     <color name="color_d">#B8A478</color>
 
-    <color name="main_bckg">#424242</color>
+    <color name="main_bckg">#616161</color>
 
     <color name="burger_bckg">#E5E5E5</color>
 
@@ -38,6 +38,9 @@
 
     <color name="alt_color2">#313B1D</color>
     <color name="alt_color3">#506030</color>
+    <color name="alt_color4">#607339</color>
 
+    <color name="alt_alt_color4">#7B3D3D</color>
+    <color name="alt_alt_color7">#9F5050</color>
 
 </resources>
