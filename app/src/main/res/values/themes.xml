@@ -40,4 +40,16 @@
 
     </style>
 
+    <style name="EditText_Number" parent="AppTheme" >
+        <!-- Primary brand color. -->
+
+        <item name="android:textColor">@color/edit_text_color</item>
+        <item name="android:background">@drawable/editext</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:layout_marginBottom">5sp</item>
+        <item name="android:textSize">30sp</item>
+
+    </style>
+
+
 </resources>

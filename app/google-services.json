@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "440535701817",
+    "firebase_url": "https://wavemusic-e3fb3.firebaseio.com",
+    "project_id": "wavemusic-e3fb3",
+    "storage_bucket": "wavemusic-e3fb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440535701817:android:092d3940ff792dd21ff0e8",
+        "android_client_info": {
+          "package_name": "com.expert.appactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440535701817-m2ljehjtud0e9a06riit140obc0l47ak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVqE9aUyqdP0lOiLaRbaqMtswjdXneMg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440535701817-m2ljehjtud0e9a06riit140obc0l47ak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440535701817:android:de919e72b07439691ff0e8",
+        "android_client_info": {
+          "package_name": "com.expert.multisound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440535701817-m2ljehjtud0e9a06riit140obc0l47ak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVqE9aUyqdP0lOiLaRbaqMtswjdXneMg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440535701817-m2ljehjtud0e9a06riit140obc0l47ak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440535701817:android:1d05e1303d64b1661ff0e8",
+        "android_client_info": {
+          "package_name": "com.pashaZ.wave_music"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440535701817-vkenduvvpk2l54f78rd69t69t64q0g5m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pashaZ.wave_music",
+            "certificate_hash": "73c2d806b2db7c5e1a0827b4140beadd52b6ea32"
+          }
+        },
+        {
+          "client_id": "440535701817-m2ljehjtud0e9a06riit140obc0l47ak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVqE9aUyqdP0lOiLaRbaqMtswjdXneMg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440535701817-m2ljehjtud0e9a06riit140obc0l47ak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440535701817:android:4ea8aaa0533bd54c1ff0e8",
+        "android_client_info": {
+          "package_name": "com.pashaz.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440535701817-146cdgqlt169ud9ksorph1u0scl6tmq4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pashaz.myapplication",
+            "certificate_hash": "73c2d806b2db7c5e1a0827b4140beadd52b6ea32"
+          }
+        },
+        {
+          "client_id": "440535701817-m2ljehjtud0e9a06riit140obc0l47ak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVqE9aUyqdP0lOiLaRbaqMtswjdXneMg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440535701817-m2ljehjtud0e9a06riit140obc0l47ak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -155,6 +155,7 @@
                     android:layout_marginLeft="20sp"
                     android:layout_marginRight="20sp"
                     android:gravity="right"
+                    android:onClick="onReg"
                     android:text="Немає аккаунта? Створити новий" />
             </FrameLayout>
 
