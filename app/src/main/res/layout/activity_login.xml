@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main_bckg"
-    tools:context=".activity.login.LoginActivity">
+    tools:context=".activity.login.Main">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -41,92 +41,19 @@
                     android:textSize="@dimen/very_big_text"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20sp"
-                    android:layout_marginTop="75sp"
-                    android:layout_marginRight="20sp"
-                    android:text="Авторизація"
-                    android:textSize="16sp"
-                    android:textStyle="italic" />
-
                 <LinearLayout
-                    style="@style/EditText_1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20sp"
-                    android:layout_marginTop="5sp"
-                    android:layout_marginRight="20sp"
-                    android:orientation="horizontal"
-                    android:padding="0sp">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    <com.hbb20.CountryCodePicker
-                        android:id="@+id/ccp"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center"
-                        app:ccp_autoDetectCountry="true"
-                        app:ccp_countryAutoDetectionPref="NETWORK_ONLY"
-                        app:ccp_countryPreference="iz"
-                        app:ccp_showFullName="false"
-                        app:ccp_showNameCode="false"
-                        app:ccp_showPhoneCode="true">
-
-                    </com.hbb20.CountryCodePicker>
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <EditText
-                            android:id="@+id/login"
-                            style="@style/EditText_1"
-                            android:layout_width="match_parent"
-                            android:layout_height="55sp"
-                            android:layout_marginLeft="0sp"
-                            android:layout_marginTop="2sp"
-                            android:layout_marginRight="0sp"
-                            android:layout_marginBottom="0sp"
-                            android:ems="10"
-                            android:hint="Телефон"
-                            android:inputType="phone"
-                            android:maxLength="20"
-                            android:textColorHint="@color/color4"
-                            android:textDirection="rtl"
-                            android:textSize="@dimen/edt_txt_size" />
-
-                    </FrameLayout>
-
-                </LinearLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <EditText
-                        android:id="@+id/pass"
-                        style="@style/EditText_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="55sp"
-                        android:layout_marginTop="2sp"
-                        android:ems="10"
-                        android:hint="Пароль"
-                        android:inputType="textPassword"
-                        android:maxLength="20"
-                        android:textColorHint="@color/color4"
-                        android:textDirection="rtl"
-                        android:textSize="@dimen/edt_txt_size" />
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                        android:layout_weight="1"
+                        android:orientation="vertical"></LinearLayout>
 
                     <Button
-                        android:id="@+id/logbut"
+                        android:id="@+id/server"
                         style="@style/Button_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -134,10 +61,24 @@
                         android:layout_marginLeft="20sp"
                         android:layout_marginTop="30sp"
                         android:layout_marginRight="20sp"
-                        android:text="Авторизуватися"
+                        android:onClick="create_server"
+                        android:text="Роздача аудіо"
                         android:textColor="@color/color7"
                         android:textSize="@dimen/edt_txt_size" />
-                </FrameLayout>
+
+                    <Button
+                        android:id="@+id/connector"
+                        style="@style/Button_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginRight="20sp"
+                        android:text="Приєднатися"
+                        android:textColor="@color/color7"
+                        android:textSize="@dimen/edt_txt_size" />
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -145,8 +86,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/color1"
-                android:paddingTop="20sp"
-                android:paddingBottom="5sp">
+                android:paddingTop="30sp"
+                android:paddingBottom="15sp">
 
                 <TextView
                     android:id="@+id/text_reg"
@@ -156,7 +97,8 @@
                     android:layout_marginRight="20sp"
                     android:gravity="right"
                     android:onClick="onReg"
-                    android:text="Немає аккаунта? Створити новий" />
+                    android:text="PavloZelinskiy"
+                    android:textSize="16sp" />
             </FrameLayout>
 
         </LinearLayout>

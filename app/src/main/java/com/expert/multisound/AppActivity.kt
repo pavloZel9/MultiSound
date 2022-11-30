@@ -5,9 +5,9 @@ import android.os.Bundle
 import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
 import android.view.animation.Animation.AnimationListener
-import com.expert.multisound.activity.login.LoginActivity
+import com.expert.multisound.activity.login.Main
 import com.expert.multisound.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_app.*
 import javax.inject.Inject
 
 
@@ -18,7 +18,7 @@ class AppActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_app)
 
         (application as App).appComponent.injectAppActivity(this)
 
@@ -38,7 +38,7 @@ class AppActivity : BaseActivity() {
     }
 
     fun Next(){
-        val intent = Intent(this, LoginActivity::class.java)
+        val intent = Intent(this, Main::class.java)
         startActivity(intent)
         overridePendingTransition(R.anim.outfade, R.anim.fade)
     }

@@ -111,7 +111,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/cancel"
+                android:id="@+id/send_code"
                 style="@style/Button_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -121,6 +121,7 @@
                 android:layout_marginRight="3sp"
                 android:layout_marginBottom="15sp"
                 android:layout_weight="1"
+
                 android:padding="10sp"
                 android:text="Підтвердити код"
                 android:visibility="visible" />

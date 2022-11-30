@@ -8,7 +8,11 @@ plugins {
     id 'com.google.firebase.crashlytics'
 }
 
+def toolsPath = projectDir.getParent() + "/keys/"
+def keysPathdefalt_ = toolsPath + "newkey.jks"
+
 android {
+
     compileSdk 32
 
     defaultConfig {
@@ -34,7 +38,75 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+    signingConfigs {
+        release {
+            try {
+                storeFile file(keysPathdefalt_)
+                keyAlias 'superkey'
+                storePassword 'superkey'
+                keyPassword 'superkey'
+            }
+            catch (ex) {
+                throw new InvalidUserDataException("You should define KEYSTORE_PASSWORD and KEY_PASSWORD in stored properties.\n" + ex.message)
+            }
+        }
+        beta {
+            try {
+                storeFile file(keysPathdefalt_)
+                keyAlias 'superkey'
+                storePassword 'superkey'
+                keyPassword 'superkey'
+            }
+            catch (ex) {
+                throw new InvalidUserDataException("You should define KEYSTORE_PASSWORD and KEY_PASSWORD in stored properties.\n" + ex.message)
+            }
+        }
+        default_conff {
+            storeFile file(keysPathdefalt_)
+            keyAlias 'superkey'
+            storePassword 'superkey'
+            keyPassword 'superkey'
+        }
+    }
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "isDev", "true"
+        }
+        release {
+            minifyEnabled false
+            buildConfigField "boolean", "isDev", "false"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.default_conff
+        }
+
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        TestMain {
+            signingConfig signingConfigs.default_conff
+            applicationId 'com.expert.multisound'
+            resValue "string", "app_name", "MultiSound"
+            resValue "string", "query_main", "http://api-dev.globalcolorsupport.com"
+            resValue "string", "developer", "PashaZel9"
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
 }
+
 
 dependencies {
 
@@ -46,6 +118,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth-ktx:21.0.7'
     implementation 'com.google.firebase:firebase-crashlytics:18.2.12'
     implementation 'com.google.firebase:firebase-analytics:21.1.0'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -57,4 +132,14 @@ dependencies {
     implementation 'com.google.firebase:firebase-crashlytics-ktx'
     implementation 'com.google.firebase:firebase-analytics-ktx'
 
+    implementation 'io.github.ParkSangGwon:tedpermission-normal:3.3.0'
+
+    // Coroutine
+    implementation 'io.github.ParkSangGwon:tedpermission-coroutine:3.3.0'
+
+    // RxJava2
+    implementation 'io.github.ParkSangGwon:tedpermission-rx2:3.3.0'
+    // RxJava3
+    implementation 'io.github.ParkSangGwon:tedpermission-rx3:3.3.0'
+    implementation files('libs/jl1.0.1.jar')
 }
